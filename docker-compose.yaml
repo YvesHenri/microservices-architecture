@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  foo-service:
+    build: foo # builds foo folder, which contains the Dockerfile
+    image: foo-image:latest
+    container_name: foo-container
+    ports:
+      - "8080:8080"
+  bar-service:
+    image: bar-image:latest
+    container_name: bar-container
+    build:
+      context: bar
+      dockerfile: Dockerfile
+      args:
+        param: some-param-value

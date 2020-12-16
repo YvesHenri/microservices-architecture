@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="whatever-reactive-service" />
+        <module name="resource-server-plugin" />
+        <module name="authorization-server" />
+        <module name="gateway-server" />
+        <module name="registry-server-plugin" />
+        <module name="whatever-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="configuration-server" target="1.8" />
+      <module name="gateway-resource-server" target="1.8" />
+      <module name="gateway-service" target="8" />
+      <module name="reactive-sample-service" target="1.8" />
+      <module name="registry-server" target="1.8" />
+      <module name="resource-server" target="8" />
+      <module name="sample-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="authorization-server" options="-parameters" />
+      <module name="configuration-server" options="-parameters" />
+      <module name="gateway-resource-server" options="-parameters" />
+      <module name="gateway-server" options="-parameters" />
+      <module name="reactive-sample-service" options="-parameters" />
+      <module name="registry-server" options="-parameters" />
+      <module name="registry-server-plugin" options="-parameters" />
+      <module name="resource-server" options="-parameters" />
+      <module name="resource-server-plugin" options="-parameters" />
+      <module name="sample-service" options="-parameters" />
+      <module name="whatever-reactive-service" options="-parameters" />
+      <module name="whatever-service" options="-parameters" />
+    </option>
+  </component>
+</project>

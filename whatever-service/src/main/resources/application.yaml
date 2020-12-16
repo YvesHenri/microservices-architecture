@@ -1,0 +1,6 @@
+server:
+  port: ${APPLICATION_PORT:8001}
+
+spring:
+  application:
+    name: whatever-service

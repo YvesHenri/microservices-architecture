@@ -1,0 +1,4 @@
+# Project exclude paths
+/authorization-server/target/
+/whatever-reactive-service/target/
+/whatever-service/target/

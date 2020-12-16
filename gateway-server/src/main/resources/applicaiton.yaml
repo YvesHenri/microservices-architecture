@@ -1,0 +1,10 @@
+server:
+  port: ${APPLICATION_PORT:8080}
+
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    server:
+      registry: ${ENABLE_REGISTRY_SERVER:false}
+      resource: ${ENABLE_RESOURCE_SERVER:true}
